@@ -11,9 +11,9 @@ public class SortingExample {
             numbers[i] = random.nextInt(1000);
         }
 
-        for (int j = 0; j < numbers.length - 1; j++) { //O(n)
+        for (int j = 0; j < numbers.length - 1; j++) {
             boolean isChanged = false;
-            for (int i = 0; i < numbers.length - 1 - j; i++) { //O(n)
+            for (int i = 0; i < numbers.length - 1 - j; i++) {
                 if (numbers[i] > numbers[i + 1]) {
                     int temp = numbers[i];
                     numbers[i] = numbers[i + 1];
