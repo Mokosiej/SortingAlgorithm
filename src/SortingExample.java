@@ -10,7 +10,7 @@ public class SortingExample {
 
 
         for (int i = 0; i < numbers.length; i++) {
-            numbers[i] = random.nextInt(1000);
+            numbers[i] = random.nextInt(0,100);
         }
 
 
@@ -55,12 +55,19 @@ public class SortingExample {
             numbers[index] = temp;
         }
 
+        long start = System.nanoTime();
+        long finish = System.nanoTime();
+
+        System.out.println(finish - start);
+
+
         System.out.println(Arrays.toString(numbers));
 
         System.out.println(counter);
 
 
     }
+
 
 }
 
